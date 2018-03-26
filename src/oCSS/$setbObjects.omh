@@ -1,0 +1,14 @@
+
+;  Skin the window background objects
+
+;  Find all items in the window of the indicated type
+Do ilInterfaceObjList.$search($ref.inObjType=pnType&$ref.inShape=pnSubtype,kTrue,kFalse,kTrue,kTrue)
+
+;  Loop through only the selected lines
+Do ilInterfaceObjList.$first(kTrue) Returns lirLine
+While lirLine
+	;  Create an item reference for the text in the list indicating the path to the object in the window
+	Set reference lirItem to lirLine.iirInterfaceObjRef
+	Do $cinst.[pcMethod](lirItem,pnSubtype)     ;; Call the appropriate method, passing in a reference to the field to change and the subtype
+	Do ilInterfaceObjList.$next(lirLine,kTrue) Returns lirLine
+End While

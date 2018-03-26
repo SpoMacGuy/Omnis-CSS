@@ -1,0 +1,4 @@
+;  Add your notational settings here
+;       ;; Example:
+;  Calculate pfrLine.$edgefloat as kEFleftRight
+Calculate pfrLine.$expandmode as kACCexpandModeOne

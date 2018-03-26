@@ -1,0 +1,21 @@
+{
+	"ident": 1057,
+	"order": 16388,
+	"objtype": "kBackComponent",
+	"componentlib": "Wash Library",
+	"componentctrl": "Wash Control",
+	"properties": {
+		"designactive": true,
+		"direction": "kWASHdown",
+		"edgefloat": "kEFnone",
+		"endcolor": "kBlack",
+		"height": 57,
+		"left": 864,
+		"objlink": 0,
+		"startcolor": "kBlue",
+		"top": 505,
+		"userinfo": "",
+		"visible": true,
+		"width": 120
+	}
+}

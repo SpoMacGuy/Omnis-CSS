@@ -1,0 +1,3 @@
+On evTreeExpand     ;; Event Parameters - pNodeItem( Itemreference )
+	
+On evTreeCollapse     ;; Event Parameters - pNodeItem( Itemreference )

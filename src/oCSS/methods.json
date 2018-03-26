@@ -1,0 +1,1822 @@
+[
+	{
+		"name": "$construct",
+		"ident": 1,
+		"order": 1,
+		"pvardefs": [
+			{
+				"name": "pirContainerObj",
+				"order": 8,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pnHoriZontalOffset",
+				"order": 9,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 2,
+				"initval": "3"
+			},
+			{
+				"name": "pnVerticalOffset",
+				"order": 10,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 3,
+				"initval": "3"
+			},
+			{
+				"name": "pnForeColor",
+				"order": 11,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 4,
+				"initval": "kBlack"
+			},
+			{
+				"name": "pnBackColor",
+				"order": 12,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 5,
+				"initval": "kWhite"
+			},
+			{
+				"name": "pnBorderColor",
+				"order": 13,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 6,
+				"initval": "kBlack"
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "loadLists",
+		"ident": 77,
+		"order": 2,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setWindow",
+		"ident": 7,
+		"order": 3,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setObjects",
+		"ident": 78,
+		"order": 4,
+		"pvardefs": [
+			{
+				"name": "pnType",
+				"order": 2,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pcMethod",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 2
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lirItem",
+				"order": 4,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lirLine",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$setbObjects",
+		"ident": 79,
+		"order": 5,
+		"pvardefs": [
+			{
+				"name": "pnType",
+				"order": 2,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pcMethod",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 2
+			},
+			{
+				"name": "pnSubtype",
+				"order": 4,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 3
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lirItem",
+				"order": 5,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lirLine",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$setComponents",
+		"ident": 80,
+		"order": 6,
+		"pvardefs": [
+			{
+				"name": "pcComponentLib",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			},
+			{
+				"name": "pcComponentCtrl",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 2
+			},
+			{
+				"name": "pcMethod",
+				"order": 4,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 3
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lirItem",
+				"order": 5,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lirLine",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "-- objects --",
+		"ident": 24,
+		"order": 7,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$buttonarea",
+		"ident": 9,
+		"order": 8,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lirLine",
+				"order": 2,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$checkbox",
+		"ident": 10,
+		"order": 9,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$checkboxlist",
+		"ident": 11,
+		"order": 10,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$colorpalette",
+		"ident": 12,
+		"order": 11,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$combo",
+		"ident": 13,
+		"order": 12,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$complexgrid",
+		"ident": 14,
+		"order": 13,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$datagrid",
+		"ident": 15,
+		"order": 14,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$droplist",
+		"ident": 8,
+		"order": 15,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 3,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lnForeColor",
+				"order": 2,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "kGreen"
+			}
+		]
+	},
+	{
+		"name": "$entry",
+		"ident": 3,
+		"order": 16,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 7,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lirBackgroundObj",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lnBackColor",
+				"order": 3,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "rgb(127,225,225)"
+			},
+			{
+				"name": "lnBackPattern",
+				"order": 4,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "kPat0"
+			},
+			{
+				"name": "lnEffect",
+				"order": 2,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "kBorderEmbossed"
+			},
+			{
+				"name": "lnForeColor",
+				"order": 6,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "kGreen"
+			}
+		]
+	},
+	{
+		"name": "$groupbox",
+		"ident": 4,
+		"order": 17,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 2,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lirBackgroundObj",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lnEffect",
+				"order": 6,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "kBorderInset"
+			},
+			{
+				"name": "lnTextColor",
+				"order": 3,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "kRed"
+			}
+		]
+	},
+	{
+		"name": "$headedlistbox",
+		"ident": 5,
+		"order": 18,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 8,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lirBackgroundObj",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lnBackColor",
+				"order": 3,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "kRed"
+			},
+			{
+				"name": "lnBackPattern",
+				"order": 6,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "kPat2"
+			},
+			{
+				"name": "lnBorderColor",
+				"order": 4,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "kGreen"
+			},
+			{
+				"name": "lnEffect",
+				"order": 7,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "kBorderBevel"
+			},
+			{
+				"name": "lnForeColor",
+				"order": 2,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "kBlue"
+			}
+		]
+	},
+	{
+		"name": "$iconarray",
+		"ident": 16,
+		"order": 19,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$listbox",
+		"ident": 17,
+		"order": 20,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$maskedentry",
+		"ident": 18,
+		"order": 21,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$reportmod",
+		"ident": 19,
+		"order": 22,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$multilineentry",
+		"ident": 6,
+		"order": 23,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 6,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lirBackgroundObj",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lnBackColor",
+				"order": 3,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "kRed"
+			},
+			{
+				"name": "lnBorderColor",
+				"order": 4,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "kGreen"
+			},
+			{
+				"name": "lnForeColor",
+				"order": 2,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "kBlue"
+			}
+		]
+	},
+	{
+		"name": "$pagedpane",
+		"ident": 21,
+		"order": 24,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$picture",
+		"ident": 22,
+		"order": 25,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$poplist",
+		"ident": 23,
+		"order": 26,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$pushbutton",
+		"ident": 2,
+		"order": 27,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 7,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lcFont",
+				"order": 5,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100,
+				"initval": "'Courier New'"
+			},
+			{
+				"name": "lirBackgroundObj",
+				"order": 3,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lirInterfaceObjRef",
+				"order": 2,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lnFontSize",
+				"order": 6,
+				"type": "kInteger",
+				"subtype": "kShortint",
+				"sublen": 0,
+				"initval": "12"
+			},
+			{
+				"name": "lnForeColor",
+				"order": 4,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "kDarkGreen"
+			}
+		]
+	},
+	{
+		"name": "$radio",
+		"ident": 25,
+		"order": 28,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$radiogroup",
+		"ident": 26,
+		"order": 29,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$screenrep",
+		"ident": 20,
+		"order": 30,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$scrollbox",
+		"ident": 27,
+		"order": 31,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$stringgrid",
+		"ident": 29,
+		"order": 32,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$subwindow",
+		"ident": 30,
+		"order": 33,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$tabPane",
+		"ident": 0,
+		"order": 34,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 6,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lirBackgroundObj",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lnForeColor",
+				"order": 2,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "kRed"
+			},
+			{
+				"name": "lnTabOrient",
+				"order": 4,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "kTopTabs"
+			},
+			{
+				"name": "lnTabType",
+				"order": 3,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "kTrianglePanes"
+			}
+		]
+	},
+	{
+		"name": "$tabstrip",
+		"ident": 31,
+		"order": 35,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$treelist",
+		"ident": 32,
+		"order": 36,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "-- background objs --",
+		"ident": 74,
+		"order": 37,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$shapefield",
+		"ident": 28,
+		"order": 38,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 3,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pnSubtype",
+				"order": 4,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 2
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "kborderinsert",
+				"order": 5,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcFont",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100,
+				"initval": "'Courier New'"
+			},
+			{
+				"name": "lnForeColor",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "kDarkGreen"
+			}
+		]
+	},
+	{
+		"name": "-- external components --",
+		"ident": 33,
+		"order": 39,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$accordion",
+		"ident": 34,
+		"order": 40,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$avplayer",
+		"ident": 35,
+		"order": 41,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$calendar",
+		"ident": 36,
+		"order": 42,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$clock",
+		"ident": 37,
+		"order": 43,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$colordroplist",
+		"ident": 38,
+		"order": 44,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$fadepict",
+		"ident": 39,
+		"order": 45,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$filedroplist",
+		"ident": 40,
+		"order": 46,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$filelist",
+		"ident": 41,
+		"order": 47,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$fisheye",
+		"ident": 42,
+		"order": 48,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$formroll",
+		"ident": 43,
+		"order": 49,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$gif",
+		"ident": 44,
+		"order": 50,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$graph2",
+		"ident": 45,
+		"order": 51,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$helpmethods",
+		"ident": 46,
+		"order": 52,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$hotpict",
+		"ident": 47,
+		"order": 53,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$html",
+		"ident": 48,
+		"order": 54,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$hyplinks",
+		"ident": 49,
+		"order": 55,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$icondroplist",
+		"ident": 50,
+		"order": 56,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$bobj_iconarray",
+		"ident": 51,
+		"order": 57,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$jpeg",
+		"ident": 52,
+		"order": 58,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$linedroplist",
+		"ident": 53,
+		"order": 59,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$marquee",
+		"ident": 54,
+		"order": 60,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$navigationmenu",
+		"ident": 55,
+		"order": 61,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$obrowser",
+		"ident": 56,
+		"order": 62,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$omnisicn",
+		"ident": 57,
+		"order": 63,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$patterndroplist",
+		"ident": 58,
+		"order": 64,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$piclist",
+		"ident": 59,
+		"order": 65,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$progress",
+		"ident": 60,
+		"order": 66,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$rtfviewer",
+		"ident": 61,
+		"order": 67,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$sidebar",
+		"ident": 62,
+		"order": 68,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$slider",
+		"ident": 75,
+		"order": 69,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$sliderpal",
+		"ident": 63,
+		"order": 70,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$tabbar",
+		"ident": 64,
+		"order": 71,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$tooltip",
+		"ident": 65,
+		"order": 72,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$transbutton",
+		"ident": 66,
+		"order": 73,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$transform",
+		"ident": 67,
+		"order": 74,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$tree",
+		"ident": 68,
+		"order": 75,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$wav",
+		"ident": 69,
+		"order": 76,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$zoom",
+		"ident": 76,
+		"order": 77,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "-- background components --",
+		"ident": 73,
+		"order": 78,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$stringlabel",
+		"ident": 70,
+		"order": 79,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$tilecontrol",
+		"ident": 71,
+		"order": 80,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$washcontrol",
+		"ident": 72,
+		"order": 81,
+		"pvardefs": [
+			{
+				"name": "pfrLine",
+				"order": 6,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lirBackgroundObj",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lnEndColor",
+				"order": 3,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "kBlue"
+			},
+			{
+				"name": "lnStartColor",
+				"order": 2,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "rgb(185,185,255)"
+			},
+			{
+				"name": "lnWashDirection",
+				"order": 4,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "kWASHleft"
+			}
+		]
+	}
+]

@@ -1,0 +1,24 @@
+;  Add your notational settings here
+;       ;; Example:
+;  Calculate pfrLine.$edgefloat as kEFleftRight
+Switch pnSubtype
+	Case kText
+		
+	Case kRect
+		
+	Case kRoundrect
+		
+	Case kOval
+		
+	Case kLine
+		
+	Case kBackpicture
+		
+	Case kRect3D
+		Calculate pfrLine.$alpha as 255
+	Default
+		;  You can leave out some of the subtypes and then the Default will be set for each of those subtypes
+End Switch
+
+;  This is set for all types
+Calculate pfrLine.$effect as kBorderInset

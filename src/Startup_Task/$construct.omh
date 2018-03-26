@@ -1,0 +1,18 @@
+
+;  With CSS in HTML, you can change the CSS file and give your web pages an entirely different look
+;       ;; oCSS is an object that will do the same thing for your Omnis application simply by instanciating it in your window superclass
+;       ;; In the $construct of your window superclass, include the following code:
+;       ;; Do $objects.oCSS.$new($cinst().$ref)
+
+;  The included sample windows, wCSS & wCSS2, include fields for each type of window object (wCSS) and External Component (wCSS2)
+;       ;; In oCSS, there is a method for each type of field. Within the method for each type, you can alter the properties for that type of field throughout the application
+;
+;  Future expected enhancements include:
+;       ;; Override these properties for a given field by setting properties in the field's $userinfo property
+;       ;; Extend this to include nested grouping fields, which have not been tested and may not work
+;       ;; Provide a way to read in a set of properties from a file. This would allow for changing the look and field on the fly, or allowing users to set up their own colors and themes`
+
+;  See the oCSS class for details on how everything works
+
+Open window instance wCSS2
+Open window instance wCSS

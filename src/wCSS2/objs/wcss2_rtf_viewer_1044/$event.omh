@@ -1,0 +1,36 @@
+On evAnimateScrollEnd
+	;
+	
+On evSetTitle
+	Calculate $cwind.$title as pTitle
+	
+On evImagePluginCreate
+	Switch pType
+		Case 'JPEG'
+			Set reference lObjRef to $cinst.$objs.$add(kComponent,"JPEG Library","JPEG Control",-100,-100,10,10,kFalse,kFalse)
+		Case 'GIF'
+			Set reference lObjRef to $cinst.$objs.$add(kComponent,"Gif Library","Gif Control",-200,-200,10,10,kFalse,kFalse)
+		Case 'PCX'
+			Set reference lObjRef to $cinst.$objs.$add(kComponent,"PCX Library","PCX Control",-200,-200,10,10,kFalse,kFalse)
+	End Switch
+	Do lObjRef.$visible.$assign(kFalse)
+	Do method AssignProperties (lObjRef,pProperties)
+	Calculate  as eval('pWindowRef.$assign(lObjRef.$framehwnd)')
+	If not(pWidthRef)
+		Calculate  as eval('pWidthRef.$assign(lObjRef.$imagewidth)')
+	End If
+	If not(pHeightRef)
+		Calculate  as eval('pHeightRef.$assign(lObjRef.$imageheight)')
+	End If
+	Do __RtfCtrlObjsList.$add(pCtrlIdent,lObjRef.$ident)
+	
+On evPluginDestroy
+	Do __RtfCtrlObjsList.$search(__RtfCtrlident=pCtrlIdent,kTrue,kFalse,kTrue,kTrue)
+	Do __RtfCtrlObjsList.$first(kTrue,kTrue) Returns lSearchRef
+	While len(lSearchRef)
+		Do __RtfCtrlObjsList.$loadcols()
+		Set reference lObjRef to $cinst.$objs.$findident(__RtfCtrlObjIdent)     ;; get reference to plugin object
+		Do $cinst.$objs.$remove(lObjRef)     ;; remove plugin object from window
+		Do __RtfCtrlObjsList.$remove(__RtfCtrlObjsList)     ;; remove object from list
+		Do __RtfCtrlObjsList.$first(kTrue,kTrue) Returns lSearchRef
+	End While

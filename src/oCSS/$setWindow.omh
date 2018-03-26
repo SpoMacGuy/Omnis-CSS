@@ -1,0 +1,5 @@
+
+;  Skin the window
+Calculate iirContainerObj.$backgroundtheme as kBGThemeNone
+Calculate iirContainerObj.$backpattern as kPat1
+Calculate iirContainerObj.$backcolor as kDarkCyan

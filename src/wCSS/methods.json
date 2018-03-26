@@ -1,0 +1,61 @@
+[
+	{
+		"name": "$construct",
+		"ident": 1,
+		"order": 1,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lnBackColor",
+				"order": 9,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "kRed",
+				"desc": "kWhite"
+			},
+			{
+				"name": "lnBorderColor",
+				"order": 13,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "kBlack"
+			},
+			{
+				"name": "lnForeColor",
+				"order": 12,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "kDarkRed",
+				"desc": "kBlack"
+			},
+			{
+				"name": "lnHorizontalOffset",
+				"order": 11,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "3"
+			},
+			{
+				"name": "lnVerticalOffset",
+				"order": 10,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "3"
+			},
+			{
+				"name": "loCSS",
+				"order": 8,
+				"type": "kObject",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	}
+]

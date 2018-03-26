@@ -1,0 +1,14 @@
+
+Set reference iirContainerObj to pirContainerObj     ;; Store a reference to the calling window
+
+Do method loadLists
+
+Do $cinst.$setWindow()     ;; Set all properties for the window
+;  Set all properties for normal window objects
+Do ilObjectTypeList.$sendall($cinst.$setObjects($ref.inConstant,$ref.icMethod))     ;; For each item in the list, call $setObjects(objectType,methodToCall)
+;  Set all properties for background window objects
+Do ilbObjectTypeList.$sendall($cinst.$setbObjects($ref.inConstant,$ref.icMethod,$ref.inObjSubtype))     ;; For each item in the list, call $setObjects(objectType,methodToCall,objectSubtype)
+;  Set all properties for external window components
+Do ilComponentType.$sendall($cinst.$setComponents($ref.icComponentLib,$ref.icComponentCtrl,$ref.icMethod))     ;; For each item in the list, call $setObjects(componentLibrary,componentControl,methodToCall)
+
+Quit method

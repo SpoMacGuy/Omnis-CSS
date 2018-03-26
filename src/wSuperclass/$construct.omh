@@ -1,0 +1,2 @@
+;  Enter your initialization code here
+Do $objects.oCSS.$new($cinst().$ref)

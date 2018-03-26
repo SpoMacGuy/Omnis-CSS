@@ -1,0 +1,3 @@
+On evCellChanging     ;; Event Parameters - pHorzCell( Number ),  pVertCell( Number ),  pCellData( Character )
+	
+On evCellChanged     ;; Event Parameters - pHorzCell( Number ),  pVertCell( Number ),  pCellData( Character )

@@ -1,0 +1,4 @@
+On evTransformComplete
+	;  Transformation is complete
+On evTransformBegin
+	;  Transformation has begun

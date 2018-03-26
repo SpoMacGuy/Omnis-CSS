@@ -1,0 +1,65 @@
+On evAnimateScrollEnd
+	;
+	
+On evSetTitle
+	Calculate $cwind.$title as pTitle
+	
+On evHyperlink
+	If pos(".lbs",pHRef)
+		Calculate lOmnisLibPath as pHRef
+		Do $cobj.$pathtoapi(lOmnisLibPath)
+		Open library (Do not close others) {[lOmnisLibPath]}
+	Else
+		Do method $setUrl (pHRef)
+	End If
+	
+On evEventTag
+	;  deal with custom html events
+	
+On evExecTag
+	;  deal with the following html tags (pTagValues contains list of propertie names and values)
+	;  <BGSOUND loop=value src=url>
+	
+On evImagePluginCreate
+	Switch pType
+		Case 'JPEG'
+			Set reference lObjRef to $cinst.$objs.$add(kComponent,"JPEG Library","JPEG Control",-100,-100,10,10,kFalse,kFalse)
+		Case 'GIF'
+			Set reference lObjRef to $cinst.$objs.$add(kComponent,"Gif Library","Gif Control",-200,-200,10,10,kFalse,kFalse)
+		Case 'PCX'
+			Set reference lObjRef to $cinst.$objs.$add(kComponent,"PCX Library","PCX Control",-200,-200,10,10,kFalse,kFalse)
+	End Switch
+	Do lObjRef.$visible.$assign(kFalse)
+	Do method AssignProperties (lObjRef,pProperties)
+	Calculate  as eval('pWindowRef.$assign(lObjRef.$framehwnd)')
+	If not(pWidthRef)
+		Calculate  as eval('pWidthRef.$assign(lObjRef.$imagewidth)')
+	End If
+	If not(pHeightRef)
+		Calculate  as eval('pHeightRef.$assign(lObjRef.$imageheight)')
+	End If
+	Do __HtmlCtrlObjsList.$add(pCtrlIdent,lObjRef.$ident)
+	
+On evXCompPluginCreate
+	If pComponentLib="internal"
+		Set reference lObjRef to $cinst.$objs.$add(eval(pComponentCtrl),-pWidthRef,-pHeightRef,pWidthRef,pHeightRef,kFalse,kFalse)
+	Else
+		Set reference lObjRef to $cinst.$objs.$add(kComponent,pComponentLib,pComponentCtrl,-pWidthRef,-pHeightRef,pWidthRef,pHeightRef,kFalse,kFalse)
+		If pComponentCtrl=$cobj.$componentctrl
+			Calculate lObjRef.$eventhwnd as $cobj.$framehwnd
+		End If
+	End If
+	Do method AssignProperties (lObjRef,pProperties)
+	Calculate  as eval('pWindowRef.$assign(lObjRef.$framehwnd)')
+	Do __HtmlCtrlObjsList.$add(pCtrlIdent,lObjRef.$ident)
+	
+On evPluginDestroy
+	Do __HtmlCtrlObjsList.$search(__HtmlCtrlident=pCtrlIdent,kTrue,kFalse,kTrue,kTrue)
+	Do __HtmlCtrlObjsList.$first(kTrue,kTrue) Returns lSearchRef
+	While len(lSearchRef)
+		Do __HtmlCtrlObjsList.$loadcols()
+		Set reference lObjRef to $cinst.$objs.$findident(__HtmlCtrlObjIdent)     ;; get reference to plugin object
+		Do $cinst.$objs.$remove(lObjRef)     ;; remove plugin object from window
+		Do __HtmlCtrlObjsList.$remove(__HtmlCtrlObjsList)     ;; remove object from list
+		Do __HtmlCtrlObjsList.$first(kTrue,kTrue) Returns lSearchRef
+	End While

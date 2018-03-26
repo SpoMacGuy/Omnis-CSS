@@ -1,0 +1,21 @@
+Set reference lLineRef to pProperties.$first()
+While lLineRef
+	Calculate lPropName as lLineRef.[1]
+	Calculate lPropValue as lLineRef.[2]
+	If len(lPropName)
+		If lPropName='$path'     ;; Start rmm5254: path is not a valid calculation, so just assign directly
+			Do pRef.[lPropName].$assign(lPropValue)
+		Else     ;; End rmm5254
+			Calculate lPropValue as replaceall(lPropValue,'<br>',chr(13))
+			Test for valid calculation {evalf(lPropValue)}
+			If flag true
+				Calculate pRef.[lPropName] as evalf(lPropValue)
+			Else
+				Calculate pRef.[lPropName] as lPropValue
+			End If
+		End If
+	Else
+		Do method ExecNotation (pRef,lPropValue)
+	End If
+	Set reference lLineRef to pProperties.$next(lLineRef)
+End While

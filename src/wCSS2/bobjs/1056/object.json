@@ -1,0 +1,20 @@
+{
+	"ident": 1056,
+	"order": 16387,
+	"objtype": "kBackComponent",
+	"componentlib": "Tile Library",
+	"componentctrl": "Tile Control",
+	"properties": {
+		"::backcolor": "kColor3DFace",
+		"::iconid": 0,
+		"designactive": true,
+		"edgefloat": "kEFnone",
+		"height": 18,
+		"left": 729,
+		"objlink": 0,
+		"top": 529,
+		"userinfo": "",
+		"visible": true,
+		"width": 120
+	}
+}

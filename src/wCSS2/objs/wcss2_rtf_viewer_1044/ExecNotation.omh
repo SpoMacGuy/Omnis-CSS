@@ -1,0 +1,7 @@
+Repeat
+	Calculate row as strtok('pNotation',chr(13))
+	If len(row)
+		Calculate row as replaceall(row,'<br>',chr(13))
+		Do evalf(row)
+	End If
+Until len(row)=0&len(pNotation)=0

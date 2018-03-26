@@ -1,0 +1,11 @@
+If pHtmlPath<>__HtmlLastUrl
+	Calculate __HtmlLastUrl as pHtmlPath
+	Do $cobj.$filename.$assign(pHtmlPath)
+	
+	For lCount from __HtmlPathList.$line-1 to 1 step -1
+		Do __HtmlPathList.$remove(1)
+	End For
+	
+	Do __HtmlPathList.$addbefore(1,pHtmlPath)
+	Do __HtmlPathList.$line.$assign(1)
+End If

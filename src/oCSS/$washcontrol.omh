@@ -1,0 +1,15 @@
+;  Add your notational settings here
+;       ;; Example:
+;  Calculate pfrLine.$edgefloat as kEFleftRight
+;  OK message
+Calculate pfrLine.$fieldstyle as ''
+Calculate pfrLine.$startcolor as lnStartColor
+Calculate pfrLine.$endcolor as lnEndColor
+Calculate pfrLine.$direction as lnWashDirection
+
+;  The following items will set the wash to cover the entire window background
+;  Calculate pfrLine.$top as 0
+;  Calculate pfrLine.$left as 0
+;  Calculate pfrLine.$height as iirContainerObj.$height
+;  Calculate pfrLine.$width as iirContainerObj.$width
+;  Calculate pfrLine.$edgefloat as kEFall

@@ -1,0 +1,5 @@
+If __HtmlPathList.$line>1
+	Calculate __HtmlPathList.$line as __HtmlPathList.$line-1
+	Do __HtmlPathList.$loadcols()
+	Do $cfield.$filename.$assign(__HtmlPath) Returns #F
+End If

@@ -1,0 +1,7 @@
+;  Add your notational settings here
+;       ;; Example:
+;  Calculate pfrLine.$edgefloat as kEFleftRight
+Calculate pfrLine.$fieldstyle as ''
+Calculate pfrLine.$font as lcFont
+Calculate pfrLine.$fontsize as lcFont
+Calculate pfrLine.$forecolor as lnForeColor
